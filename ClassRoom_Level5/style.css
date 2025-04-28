@@ -1,0 +1,114 @@
+.transition {
+  height: 200px;
+  width: 200px;
+  background-color: aquamarine;
+  border-radius: 3px;
+  border-color: black;
+  border-style: solid;
+
+  /* transition-timing-function: steps(5); OR */
+  /* transition-timing-function: ease-out; OR */
+  /* transition-timing-function: ease-in; OR */
+
+  /* transition-timing-function: ease-in;
+  transition-delay: 2s;
+  transition-duration: 3s;
+  transition-property: all;    OR  */
+
+  /* transition: all 2s steps(4) 1s; */
+
+  /* Below line is used for showing how to rotate the object*/
+  /* transform: rotate(180deg); */
+
+  transition: all 2s ease-in;
+}
+
+.transition:hover {
+  background-color: green;
+  font-size: 20px;
+  color: red;
+  transform: scaleX(1.5);
+
+  /* Below line is used for showing how to rotate the object when hover the mouse */
+  /* transform: rotateZ(45deg); */
+
+  /* transform: translateY(50px); */
+  transform: skew(45deg);
+}
+
+.transition:active {
+  background-color: blue;
+  font-size: 30px;
+  color: white;
+}
+
+/* Below code is for only the animation property. */
+
+.animation {
+  height: 200px;
+  width: 200px;
+  background-color: aquamarine;
+  border-radius: 3px;
+  border-color: black;
+  border-style: solid;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  /* animation-name: myAnimation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;              OR  */
+
+  animation: myAnimation 3s ease-in 1s infinite reverse;
+}
+
+/* @keyframes myAnimation {
+  from {
+    background-color: yellow;
+    left: 0px;
+  }
+  to {
+    background-color: red;
+    right: 200px;
+  }
+}     OR   */
+
+/* Here "from" is 0% and "To" is 100%, If anything we want to define in middle of the animation then we used percentage. */
+
+@keyframes myAnimation {
+  0% {
+    background-color: yellow;
+    left: 0px;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+    right: 200px;
+  }
+}
+
+/* Below code is realted to the practice Set 8 task. */
+
+#task8 {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 20px solid #2a9d8f;
+  border-top: 20px solid #023047;
+  margin-left: 200px;
+
+  animation: loaderAnimation 1s ease-in 0s infinite;
+}
+
+@keyframes loaderAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

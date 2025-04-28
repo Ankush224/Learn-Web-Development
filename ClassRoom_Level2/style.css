@@ -1,0 +1,195 @@
+h1{
+    color: red;
+    height: 100px;
+    width: 500px;
+    border-width: 2px;
+    border-color: black;
+    border-style: dotted;
+    text-align: center;
+}
+
+.color{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+
+    /* padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px; */
+
+    /* Below line can be used behalf of the above four lines */
+    padding: 15px 10px 15px 10px;
+
+    
+    /* border-color: red;
+    border-style: solid;
+    border-width: 5px; */
+
+   /* Below line can be used behalf of the above three lines */
+
+    /* border: 2px solid red; */
+   
+    /* border-radius: 25%;  */
+    
+  /* Below line can be used on behalf of the above line */
+
+    border-radius: 10px;
+
+    /* margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 15px; */
+
+    /* Below line can be used behalf of the above four lines */
+    margin: 15px 10px 15px 10px;
+}
+
+/* This below code is for task 1 from line 49 to 54*/
+ .task1{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+ }
+
+ /* This below code is for task 2 from line 57 to 79*/
+ #navbar{
+    height: 60px;
+    background-color: black;
+    color: white;
+ }
+
+ #logo{
+    color: rgb(221, 158, 57);
+    padding-left: 25px;
+    font-size: 25px;
+ }
+
+ a{
+    color: white;
+    text-decoration: none;
+    margin-right: 200px;
+
+ }
+
+ button{
+    color: black;
+    background-color: rgb(221, 158, 57);;
+ }
+
+ #inline{
+   background-color: red;
+   display: inline;
+ }
+
+ #box1{
+   background-color: green;
+   height: 100px;
+   width: 100px;
+   margin: 25px;
+   padding: 25px;
+
+   /* if we are using the inline-block then above all 5 properties has been appplied
+   If we are using the only inline then above all 5 proerties will not apply. */
+   display:  inline-block; 
+ }
+
+ #box2{
+   background-color: blue;
+   height: 100px;
+   width: 100px;
+   margin: 25px;
+   padding: 25px;
+
+   /* if we are using the inline-block then above all 5 properties has been appplied
+   If we are using the only inline then above all 5 proerties will not apply. */
+   display:  inline-block;
+
+ }
+
+ #box3{
+   background-color: red;
+   height: 100px;
+   width: 100px;
+   margin: 25px;
+   padding: 25px;
+
+   /* box 3 section removed from page and also space will not be reserved */
+   display: none;
+ }
+
+ /* This is practice set 4 code from line 124 to 181. */
+ #practiceSet4{
+   background-color: black;
+   display: inline;
+ }
+
+#headerData{
+  height: 100px;
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+}
+
+#contantArea{
+  height: 525px;
+}
+
+.footerData{
+  height:50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.set1{
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255,0,0,0.5);
+  margin: 25px;
+  padding: 25px;
+  border-radius: 5px;
+  border-color: black;
+  border-style: solid;
+  display: inline-block;
+}
+
+.set2{
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0,255,0,0.5);
+  margin: 25px;
+  padding: 25px;
+  border-radius: 5px;
+  border-color: black;
+  border-style: solid;
+  display: inline-block;
+}
+
+.set3{
+  width: 100px;
+  height: 100px;
+  background-color: rgba(0,0,255,0.5);
+  margin: 25px;
+  padding: 25px;
+  border-radius: 5px;
+  border-color: black;
+  border-style: solid;
+  display: inline-block;
+}
+
+ /* This is task 2 code from line 183 to 186. */
+ #Task_2{
+  background-color: black;
+  display: inline;
+}
+
+/* This is task 2 code from line 189 to 192. */
+#Task_1{
+  background-color: black;
+  display: inline;
+}
+
+ 
+

@@ -1,0 +1,139 @@
+/* body {
+  text-align: center;
+} */
+
+.Flexbox {
+  height: 50px;
+  width: 100px;
+  display: inline-block;
+  border-radius: 2px;
+  border-color: black;
+  border-style: solid;
+}
+
+#container {
+  height: 250px;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  /* align-items: flex-start; */
+  /* align-content: flex-end; */
+}
+
+#box1 {
+  background-color: red;
+  flex-grow: 1;
+}
+
+#box2 {
+  background-color: green;
+  height: 100px;
+  flex-grow: 2;
+  /* flex-shrink: 1; */
+  /* align-self: flex-end; */
+}
+
+#box3 {
+  background-color: blue;
+  height: 35px;
+}
+
+#box4 {
+  background-color: yellow;
+}
+
+#box5 {
+  background-color: aqua;
+}
+
+/* The below code is for Q1 in practice set 6. */
+
+.navbar {
+  background-color: pink;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style-type: none;
+  background-color: aqua;
+  display: inline;
+}
+
+/* The below code is for Q2 in practice set 6. */
+
+.outer {
+  height: 400px;
+  width: 400px;
+  background-color: pink;
+  display: flex;
+  /* below line is using to set box in centre (left to right side) */
+  justify-content: center;
+  /* below line is using to set box in centre (top to bottom side) */
+  align-items: center;
+}
+
+.inner {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+}
+
+/* The below code is for Q3 in practice set 6 from line 91 to 107.. */
+
+.outer1 {
+  height: 400px;
+  width: 400px;
+  background-color: pink;
+  display: flex;
+  /* below line is using to set box in centre (left to right side) */
+  justify-content: center;
+  /* below line is using to set box in centre (top to bottom side) */
+  align-items: center;
+}
+
+.inner1 {
+  height: 200px;
+  width: 200px;
+  background-color: aqua;
+  align-self: flex-start;
+}
+
+/* The below code is for media.html file from line 111 to 139. */
+
+div {
+  height: 100px;
+  width: 200px;
+  background-color: yellow;
+}
+
+@media (width: 600px) {
+  div {
+    background-color: red;
+  }
+}
+
+@media (min-width: 499px) {
+  div {
+    background-color: green;
+  }
+}
+
+@media (max-width: 601px) {
+  div {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  div {
+    background-color: pink;
+  }
+}
