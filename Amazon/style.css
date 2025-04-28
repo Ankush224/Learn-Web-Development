@@ -21,7 +21,7 @@
 }
 
 .logo {
-  background-image: url("/images/amazon_logo.png");
+  background-image: url("/Amazon/images/amazon_logo.png");
   background-size: cover;
   height: 50px;
   width: 100%;
@@ -177,7 +177,7 @@
   height: 300px;
   width: 100%;
   background-size: cover;
-  background-image: url("/images/hero_image.jpg");
+  background-image: url("/Amazon/images/hero_image.jpg");
   display: flex;
   justify-content: center;
   align-items: flex-end;
