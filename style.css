@@ -147,28 +147,6 @@ body {
 
 /* Below code is reatled to third section. */
 
-/* .hero-section {
-  height: 250px;
-  width: calc(100% - 250px);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 125px;
-  margin-right: 125px;
-}
-
-.hero-image {
-  background-image: url("/images/hero-image.jpg");
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-} */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .hero-section {
   width: calc(100% - 250px);
   margin: 10px 125px;
@@ -217,8 +195,6 @@ body {
   background-color: white;
   margin-left: 125px;
   margin-right: 125px;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 .electronics-items {
@@ -279,8 +255,7 @@ body {
 .title {
   color: #1f1f1f;
   /* display: inline; */
-  padding-left: 10px;
-  padding-top: 10px;
+  padding: 10px 10px;
   font-weight: 550;
   font-size: x-large;
 }
