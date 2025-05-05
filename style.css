@@ -133,39 +133,67 @@ body {
 }
 
 /* Below code is reatled to second section below of the navbar. */
-
 .all-items {
-  height: 150px;
-  width: calc(100% - 250px); /* 100px left + 100px right */
   background-color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 125px;
-  margin-right: 125px;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
   justify-content: space-evenly;
+  padding: 10px 0;
+  margin: 10px auto;
+  max-width: 87%;
 }
 
-.second-section p {
-  margin-top: 125px;
-}
-
-.second-section {
-  height: 90px;
+.item-box {
   width: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+}
+
+.item-box img {
+  width: 100px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.item-box p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Responsive: Tablets */
+@media (max-width: 1024px) {
+  .all-items {
+    width: calc(100% - 80px);
+    margin: 10px 40px;
+  }
+}
+
+/* Responsive: Mobiles */
+@media (max-width: 768px) {
+  .all-items {
+    gap: 8px;
+    justify-content: center;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .all-items {
+    margin: 10px 20px;
+    gap: 6px;
+  }
 }
 
 /* Below code is reatled to third section. */
 
 .hero-section {
-  width: calc(100% - 250px);
-  margin: 10px 125px;
   height: 250px;
-  overflow: hidden;
+  padding: 20px;
+  margin: 0px auto;
+  max-width: 87%;
 }
 
 .slider {
@@ -176,12 +204,12 @@ body {
 
 .slide-track {
   display: flex;
-  width: 1000%; /* 10 slides */
-  animation: scrollSteps 25s steps(10) infinite;
+  width: 600%; /* 6 slides × 100% */
+  animation: scrollSteps 24s steps(6) infinite;
 }
 
 .slide {
-  flex: 0 0 10%; /* Each slide = 10% of .slide-track width */
+  flex: 0 0 16.6666%; /* 100 / 6 = ~16.66% */
   height: 100%;
 }
 
@@ -190,8 +218,10 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 10px;
 }
 
+/* Animation keyframes */
 @keyframes scrollSteps {
   from {
     transform: translateX(0%);
@@ -201,13 +231,41 @@ body {
   }
 }
 
+/* Responsive tweaks */
+
+/* This is for the laptop. */
+@media (max-width: 1024px) {
+  .hero-section {
+    height: 220px;
+    padding: 0 10px;
+  }
+}
+
+/* This is for the tab. */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 180px;
+  }
+}
+
+/* This is for mobile device. */
+@media (max-width: 480px) {
+  .hero-section {
+    height: 150px;
+  }
+
+  .slide img {
+    border-radius: 6px;
+  }
+}
+
 /* Below code is related to the Fourth section (below of the hero image) */
 
 .forth-section {
   padding: 20px;
   background-color: white;
   margin: 10px auto;
-  max-width: 63%;
+  max-width: 85%;
 }
 
 .electronics-item {
@@ -257,7 +315,7 @@ body {
   padding: 20px;
   background-color: white;
   margin: 10px auto;
-  max-width: 63%;
+  max-width: 85%;
 }
 
 .sports-items {
@@ -306,7 +364,7 @@ body {
   padding: 20px;
   background-color: white;
   margin: 10px auto;
-  max-width: 63%;
+  max-width: 85%;
 }
 
 .health-items {
