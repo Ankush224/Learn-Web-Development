@@ -17,6 +17,20 @@ body {
   background-color: #2874f0;
 }
 
+/* Below code is common for Forth, Fifth and Sixth sections. */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.item-parent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
 /* Below code is realted to the nav-logo. */
 
 .navbar-logo {
@@ -190,85 +204,141 @@ body {
 /* Below code is related to the Fourth section (below of the hero image) */
 
 .forth-section {
-  height: 350px;
-  width: calc(100% - 250px);
+  padding: 20px;
   background-color: white;
-  margin-left: 125px;
-  margin-right: 125px;
+  margin: 10px auto;
+  max-width: 63%;
 }
 
-.electronics-items {
-  height: 225px;
-  width: 266px;
+.electronics-item {
+  height: 250px;
+  width: 180px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
-  align-items: center;
-  float: left;
-  justify-content: space-evenly;
-  background-size: contain !important;
-  background: no-repeat;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.electronics-item:hover {
+  transform: scale(1.05);
 }
 
 .product-name {
-  margin-top: 300px;
-  color: #1f1f1f;
+  padding: 4px 8px;
+  font-weight: 500;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .electronics-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .electronics-item {
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
 /* Below code is related to the Fifth section (below of the fourth image) */
 
 .fifth-section {
-  height: 350px;
-  width: calc(100% - 250px);
-  background-color: #ffffff;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 125px;
-  margin-right: 125px;
-  align-items: center;
-  justify-content: space-evenly;
+  padding: 20px;
+  background-color: white;
+  margin: 10px auto;
+  max-width: 63%;
 }
 
 .sports-items {
-  height: 225px;
-  width: 266px;
+  height: 250px;
+  width: 180px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
-  align-items: center;
-  float: left;
-  justify-content: space-evenly;
-  background-size: contain !important;
-  background: no-repeat;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.sports-items:hover {
+  transform: scale(1.05);
+}
+
+.product-name {
+  padding: 4px 8px;
+  font-weight: 500;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .sports-items {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sports-items {
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
 /* Below code is related to the Sixth section (below of the fifth image) */
-
 .sixth-section {
-  height: 350px;
-  width: calc(100% - 250px);
-  background-color: #ffffff;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 125px;
-  margin-right: 125px;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.title {
-  color: #1f1f1f;
-  /* display: inline; */
-  padding: 10px 10px;
-  font-weight: 550;
-  font-size: x-large;
+  padding: 20px;
+  background-color: white;
+  margin: 10px auto;
+  max-width: 63%;
 }
 
 .health-items {
-  height: 225px;
-  width: 266px;
+  height: 250px;
+  width: 180px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
-  align-items: center;
-  float: left;
-  justify-content: space-evenly;
-  background-size: contain !important;
-  background: no-repeat;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.health-items:hover {
+  transform: scale(1.05);
+}
+
+.product-name {
+  padding: 4px 8px;
+  font-weight: 500;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .health-items {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .health-items {
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
 /* Below code is related to the footer section. */
