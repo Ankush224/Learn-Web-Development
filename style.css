@@ -231,12 +231,15 @@ body {
 }
 
 /* Media Queries for Responsiveness */
+
+/* this is for tab. */
 @media (max-width: 768px) {
   .electronics-item {
     width: 45%;
   }
 }
 
+/* This is for the mobile device. */
 @media (max-width: 480px) {
   .electronics-item {
     width: 100%;
@@ -278,12 +281,15 @@ body {
 }
 
 /* Media Queries for Responsiveness */
+
+/* this is for tab. */
 @media (max-width: 768px) {
   .sports-items {
     width: 45%;
   }
 }
 
+/* This is for the mobile device. */
 @media (max-width: 480px) {
   .sports-items {
     width: 100%;
@@ -324,12 +330,15 @@ body {
 }
 
 /* Media Queries for Responsiveness */
+
+/* this is for tab. */
 @media (max-width: 768px) {
   .health-items {
     width: 45%;
   }
 }
 
+/* This is for the mobile device. */
 @media (max-width: 480px) {
   .health-items {
     width: 100%;
